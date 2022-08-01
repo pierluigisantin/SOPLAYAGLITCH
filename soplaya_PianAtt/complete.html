@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>OAuth Sample</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link id="favicon" rel="icon" href="https://www.tableau.com/themes/custom/tableau_www/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <script >
+
+      debugger;
+      
+      var urlNoHashValue = location.hash.replace(/^#/, '?');
+      if (urlNoHashValue.length>0)
+        {
+          
+          window.location=urlNoHashValue;
+        }
+
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <p id="message">Sign in completato. Puoi chiudere questa finestra e tornare a Tableau</p>
+    </div>
+  </body>
+</html>
